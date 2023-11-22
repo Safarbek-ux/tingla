@@ -533,9 +533,11 @@ img {
         justify-content: center;
         flex-direction: column;
     }
-    .download::before{
+
+    .download::before {
         display: none;
     }
+
     .download_img {
         max-width: 302px;
         height: auto;
@@ -555,7 +557,7 @@ img {
     }
 
     .download_info--list {
-       justify-content: center;
+        justify-content: center;
     }
 }
 
@@ -652,10 +654,40 @@ img {
     width: 24px;
     height: 24px;
 }
+
 @media only screen and (max-width:940px) {
-    .footer-container{
+    .footer-container {
         gap: 47px;
         justify-content: space-between;
     }
 }
+
 /* Footer end */
+
+/* Modal start*/
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.modal-container {
+    position: fixed;
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-items {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    background: #000;
+    display: inline-block;
+    opacity: 0.05;
+}
+
+/* Modal end */
